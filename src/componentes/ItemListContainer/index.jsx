@@ -1,9 +1,10 @@
 import "./itemListContainer.css";
 
-function ItemListContainer({greeting}){
+function ItemListContainer({greeting, pokemon}){
     return (
     <div>
         <h1>{greeting}</h1>
+        <p>{pokemon?.name}</p>
     </div>
     );
 
