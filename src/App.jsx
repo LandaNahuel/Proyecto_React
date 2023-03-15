@@ -10,19 +10,20 @@ function App()  {
 
   useEffect (() => {
     fetch("https://pokeapi.co/api/v2/pokemon/ditto")
-    .then((data) => data.json() )
-    .then((poke) => setPokemon({poke}));
-  }, []); 
-  
+    .then((data) => data.json())
+    .then((poke) => setPokemon(poke));
+  }, []);
+
 
   const handleChange = () => {
-    setGreeting(greeting+1)
+    setGreeting(greeting+1);
   }
 
   return (
     <div>
       <NavBar changeValue={handleChange}/>
-      {greeting <= 3 && <ItemListContainer greeting={greeting}/>}
+      {greeting <= 3 && (
+      <ItemListContainer greeting={greeting} pokemon={pokemon}/>)}
     </div>
   )
 }
