@@ -6,17 +6,18 @@ import NavBar from "./componentes/Navbar";
 function App()  {
   const[greeting, setGreeting] = useState (1);
   const[pokemon, setPokemon] = useState (null);
+  const[pokemonName, setPokemonName] = useState ("ditto");
 
 
   useEffect (() => {
-    fetch("https://pokeapi.co/api/v2/pokemon/ditto")
+    fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
     .then((data) => data.json())
     .then((poke) => setPokemon(poke));
-  }, []);
+  }, [pokemonName]);
 
 
   const handleChange = () => {
-    setGreeting(greeting+1);
+    setPokemonName("charizard");
   }
 
   return (

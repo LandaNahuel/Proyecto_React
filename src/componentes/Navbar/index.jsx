@@ -30,7 +30,7 @@ function NavBar({changeValue}){
                             <a className="nav-link active" >CONTACTO</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active" onClick={changeValue}>CAMBIAR MENSAJE</a>
+                            <button className="nav-link active" onClick={changeValue}>CAMBIAR VALOR</button>
                         </li>
                     </ul>
                     <CardWidget />
