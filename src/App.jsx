@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import ItemListContainer from "./componentes/ItemListContainer";
 import NavBar from "./componentes/Navbar";
+import ItemDetailContainer from "./componentes/ItemDetailContainer";
 
 
 function App()  {
-  const[greeting, setGreeting] = useState (1);
+  const[greetings, setGreetings] = useState (1);
   const[pokemon, setPokemon] = useState (null);
   const[pokemonName, setPokemonName] = useState ("ditto");
 
@@ -23,8 +24,8 @@ function App()  {
   return (
     <div>
       <NavBar changeValue={handleChange}/>
-      {greeting <= 3 && (
-      <ItemListContainer greeting={greeting} pokemon={pokemon}/>)}
+      <ItemDetailContainer/>
+      {/*<ItemListContainer greetings={greetings} pokemon={pokemon}/>*/}
     </div>
   )
 }

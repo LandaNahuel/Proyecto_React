@@ -6,7 +6,7 @@ import "./itemListContainer.css";
 
 
 
-function ItemListContainer({greeting}){
+function ItemListContainer({greetings}){
     const [products, setProducts] = useState([])
     useEffect(() => {
         const productsPromise = new Promise((resolve, rejects) => 

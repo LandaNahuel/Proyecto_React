@@ -1,11 +1,11 @@
 export default [
-    {   
+    {
       id: 1,
       name: "Pensar A La Japonesa",
       autor:"Le Yen Mai ",
       description:
         "Un libro es una fuente de aprendizaje e imaginación. Permite conocer, descubrir y explorar el mundo que nos rodea. Aumenta nuestra curiosidad y nos mantiene entretenidos. Los libros nos permiten conectar con historias, personajes y sentimientos ayudando a nuestra comprensión, vocabulario y escritura.",
-      image: "../assets/Pensar_a_la_japonesa.webp",
+      image: "../assets/react.svg",
       price: 2580,
       cat: "Novela",
       stock: 8,
