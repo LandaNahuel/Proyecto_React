@@ -1,0 +1,133 @@
+export default [
+    {   
+      id: 1,
+      name: "Pensar A La Japonesa",
+      autor:"Le Yen Mai ",
+      description:
+        "Un libro es una fuente de aprendizaje e imaginación. Permite conocer, descubrir y explorar el mundo que nos rodea. Aumenta nuestra curiosidad y nos mantiene entretenidos. Los libros nos permiten conectar con historias, personajes y sentimientos ayudando a nuestra comprensión, vocabulario y escritura.",
+      image: "../assets/Pensar_a_la_japonesa.webp",
+      price: 2580,
+      cat: "Novela",
+      stock: 8,
+    },
+    {
+      id: 2,
+      name: "Fuego Y Sangre",
+      autor:"George R. R. Martin ",
+      description: 'El nuevo libro de George R. R. Martin narra la fascinante historia de los Targaryen, la dinastía que reinó en Poniente trescientos años antes del inicio de "Canción de hielo y fuego", la saga que inspiró la serie de HBO: Juego de tronos.',
+      image: "",
+      price: 10799,
+      cat: "Novela",
+      stock: 4,
+    },
+    {
+      id: 3,
+      name: "Hábitos Atómicos",
+      autor:"James Clear ",
+      description:
+        "Un libro es una fuente de aprendizaje e imaginación. Permite conocer, descubrir y explorar el mundo que nos rodea. Aumenta nuestra curiosidad y nos mantiene entretenidos. Los libros nos permiten conectar con historias, personajes y sentimientos ayudando a nuestra comprensión, vocabulario y escritura.",
+      image: "",
+      price: 6500,
+      cat: "Novela",
+      stock: 3,
+    },
+    {
+      id: 4,
+      name: "Poesía Completa ",
+      autor:"Jorge Luis Borges",
+      description:
+        "Poesia completa de Jorge Luis Borges",
+      image: "",
+      price: 5999,
+      cat: "Poesia",
+      stock: 7,
+    },
+    {
+      id: 5,
+      name: "Cuarenta Y Tres Maneras De Soltarse El Pelo",
+      autor:"Sastre Elvira",
+      description:
+        "Un libro es una fuente de aprendizaje e imaginación. Permite conocer, descubrir y explorar el mundo que nos rodea. Aumenta nuestra curiosidad y nos mantiene entretenidos. Los libros nos permiten conectar con historias, personajes y sentimientos ayudando a nuestra comprensión, vocabulario y escritura.",
+      image: "",
+      price: 3800,
+      cat: "Poesia",
+      stock: 34,
+    },
+    {
+      id: 6,
+      name: "Conferencia Sobre Nada",
+      autor:"John Cage",
+      description:
+        "Un libro es una fuente de aprendizaje e imaginación. Permite conocer, descubrir y explorar el mundo que nos rodea. Aumenta nuestra curiosidad y nos mantiene entretenidos. Los libros nos permiten conectar con historias, personajes y sentimientos ayudando a nuestra comprensión, vocabulario y escritura.",
+      image: "/cremaC.jpg",
+      price: 2350,
+      cat: "Poesia",
+      stock: 65,
+    },
+    {
+      id: 7,
+      name: "Mitos Clasificados 1",
+      autor:"Cántaro",
+      description:
+        "Un libro es una fuente de aprendizaje e imaginación. Permite conocer, descubrir y explorar el mundo que nos rodea. Aumenta nuestra curiosidad y nos mantiene entretenidos. Los libros nos permiten conectar con historias, personajes y sentimientos ayudando a nuestra comprensión, vocabulario y escritura.",
+      image: "",
+      price: 1800,
+      cat: "Cuento",
+      stock: 22,
+    },
+    {
+      id: 8,
+      name: "Sucedió En Colores",
+      autor:"Liliana Bodoc",
+      description:
+        "Un libro es una fuente de aprendizaje e imaginación. Permite conocer, descubrir y explorar el mundo que nos rodea. Aumenta nuestra curiosidad y nos mantiene entretenidos. Los libros nos permiten conectar con historias, personajes y sentimientos ayudando a nuestra comprensión, vocabulario y escritura.",
+      image: "",
+      price: 2399,
+      cat: "Cuento",
+      stock: 53,
+    },
+    {
+      id: 9,
+      name: "Caperucita Roja Del Noroeste",
+      autor:"Albatros",
+      description:
+        "Un libro es una fuente de aprendizaje e imaginación. Permite conocer, descubrir y explorar el mundo que nos rodea. Aumenta nuestra curiosidad y nos mantiene entretenidos. Los libros nos permiten conectar con historias, personajes y sentimientos ayudando a nuestra comprensión, vocabulario y escritura.",
+      image: "",
+      price: 2700,
+      cat: "Cuento",
+      stock: 2,
+    },
+    {
+      id: 10,
+      name: "Sobrenatural",
+      autor:"Joe Dispenza",
+      description:
+        "Los libros de autoayuda ocupan hoy el top de ventas a nivel mundial. Son guías de referencia que brindan herramientas y estrategias para ayudar al lector en la búsqueda del bienestar emocional.",
+      image: "",
+      price: 6899,
+      cat: "Manual",
+      stock: 4,
+    },
+    {
+      id: 11,
+      name: "Libro De Los Pequeños Grandes Artistas 2",
+      autor:"Sanz Mariana",
+      description:
+          "Los libros de autoayuda ocupan hoy el top de ventas a nivel mundial. Son guías de referencia que brindan herramientas y estrategias para ayudar al lector en la búsqueda del bienestar emocional.",
+      image: "",
+      price: 3790,
+      cat: "Manual",
+      stock: 1,
+    },
+    {
+        id: 12,
+        name: "Como Ganar Amigos E Influir Sobre Las Personas",
+        autor:"Carnegie Da",
+        description:
+          "Los libros de autoayuda ocupan hoy el top de ventas a nivel mundial. Son guías de referencia que brindan herramientas y estrategias para ayudar al lector en la búsqueda del bienestar emocional.",
+        image: "",
+        price: 3239,
+        cat: "Manual",
+        stock: 44,
+    },
+  ];

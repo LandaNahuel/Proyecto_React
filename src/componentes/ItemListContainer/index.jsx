@@ -1,10 +1,28 @@
+
+import { useEffect, useState } from "react";
+import Products from "../../mocks/products";
+import ItemList from "../ItemList";
 import "./itemListContainer.css";
 
-function ItemListContainer({greeting, pokemon}){
+
+
+function ItemListContainer({greeting}){
+    const [products, setProducts] = useState([])
+    useEffect(() => {
+        const productsPromise = new Promise((resolve, rejects) => 
+        setTimeout(() => resolve(Products), 2000)
+        );
+
+        productsPromise
+            .then((response) => setProducts(response)) 
+            .catch((err) => console.log(err));
+    }, [])
+
+    console.log({products});
+
     return (
     <div>
-        <h1>{greeting}</h1>
-        <p> {pokemon?.name??"no se encontro el pokemon "}</p>
+        <ItemList products={products}/>
     </div>
     );
 
