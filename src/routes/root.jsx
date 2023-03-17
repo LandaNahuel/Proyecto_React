@@ -4,8 +4,7 @@ import { useParams } from "react-router-dom";
 
 function Root()  {
   const params = useParams (); 
-
-  console.log({params});
+  const isCategoryRoute = Boolean(params.id)
 
 
   return (
