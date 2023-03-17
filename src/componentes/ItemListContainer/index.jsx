@@ -22,6 +22,7 @@ function ItemListContainer({greetings}){
 
     return (
     <div>
+        <h1>ITEM LIST</h1>
         <ItemList products={products}/>
     </div>
     );

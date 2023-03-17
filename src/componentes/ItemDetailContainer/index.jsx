@@ -8,7 +8,7 @@ function ItemDetailContainer({greetings}){
     const [products, setProducts] = useState([])
     useEffect(() => {
         const productsPromise = new Promise((resolve, rejects) => 
-        setTimeout(() => resolve(Products), 2000)
+        setTimeout(() => resolve(Products), 4000)
         );
 
         productsPromise
@@ -20,6 +20,7 @@ function ItemDetailContainer({greetings}){
 
     return (
     <div>
+        <h1>ITEM DETAIL CONTAINER</h1>
         <ItemDetail products={products}/>
     </div>
     );
