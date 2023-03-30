@@ -1,6 +1,7 @@
 import ItemListContainer from "../componentes/ItemListContainer";
 import NavBar from "../componentes/Navbar";
 import { useParams } from "react-router-dom";
+import products from "../mocks/products";
 
 function Root()  {
   const params = useParams (); 
@@ -10,7 +11,10 @@ function Root()  {
   return (
     <div>
       <NavBar />
-      <ItemListContainer />
+      <ItemListContainer 
+      isCategoryRoute={isCategoryRoute} 
+      categoryId={params.id}
+      />
     </div>
   );
 }

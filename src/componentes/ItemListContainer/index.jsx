@@ -6,7 +6,7 @@ import "./itemListContainer.css";
 
 
 
-function ItemListContainer({greetings}){
+function ItemListContainer({categoryId, isCategoryRoute }){
     const [products, setProducts] = useState([])
     useEffect(() => {
         const productsPromise = new Promise((resolve, rejects) => 
@@ -14,7 +14,11 @@ function ItemListContainer({greetings}){
         );
 
         productsPromise
-            .then((response) => setProducts(response)) 
+            .then((response) => {
+                const productFiltered = response.filter(
+                    (product) => product.category === categoryId
+                )
+            })
             .catch((err) => console.log(err));
     }, [])
 
