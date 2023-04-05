@@ -3,18 +3,19 @@ import NavBar from "../componentes/Navbar";
 import { useParams } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import { useContext } from "react";
-import {CustomContext} from "../context";
+import  {Context} from "../context"
 
 
 function Root()  {
   const params = useParams (); 
   const isCategoryRoute = Boolean(params.id)
-  const contextValues = useContext(CustomContext)
+  const contextValues = useContext(Context)
 
   console.log({contextValues});
   
 
   return (
+    <CustomProvider>
     <Container >
       <NavBar />
       <ItemListContainer 
@@ -22,6 +23,7 @@ function Root()  {
       categoryId={params.id}
       />
     </Container>
+    </CustomProvider>
   );
 }
 

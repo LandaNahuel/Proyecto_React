@@ -1,9 +1,9 @@
 import { createContext } from "react";
 
-export const CustomContext= createContext ()
+export const Context= createContext ()
 
 function CustomProvider({children}) {
-    return <CustomContext.Provider value="hola mundo ">{children}</CustomContext.Provider>;
+    return <Context.Provider value="hola mundo ">{children}</Context.Provider>;
 }
 
 export default CustomProvider;
