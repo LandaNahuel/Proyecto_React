@@ -2,20 +2,20 @@ import ItemListContainer from "../componentes/ItemListContainer";
 import NavBar from "../componentes/Navbar";
 import { useParams } from "react-router-dom";
 import { Container } from "react-bootstrap";
-import products from "../mocks/products";
 import { useContext } from "react";
-import {Context} from "../context";
+import {CustomContext} from "../context";
+
 
 function Root()  {
   const params = useParams (); 
   const isCategoryRoute = Boolean(params.id)
-  const contextValues = useContext(Context)
-  
+  const contextValues = useContext(CustomContext)
+
   console.log({contextValues});
   
 
   return (
-    <Container className="rout-container">
+    <Container >
       <NavBar />
       <ItemListContainer 
       isCategoryRoute={isCategoryRoute} 

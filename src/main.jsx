@@ -4,9 +4,9 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Root from './routes/root';
 import ItemRoot from './routes/item';
-import Cart from './routes/cart';
+import Cart from './routes/card';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import CustomProvider from './context';
+import {CustomProvider} from './context';
 
 //import Layout from '.componentes/Layout';
 //import ErrorPage from './rutes/error-page';
@@ -42,3 +42,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </CustomProvider>
   </React.StrictMode>
 );
+
