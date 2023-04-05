@@ -1,11 +1,5 @@
 
-h1{
+*{box-sizing: border-box;}
+.div-container{
     display: flex;
-    justify-content: center;
-    background-color: rgba(242, 242, 247, 0.527);
-}
-p{
-    display: flex;
-    justify-content: center;
-    background-color: rgba(242, 242, 247, 0.527);
 }

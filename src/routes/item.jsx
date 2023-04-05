@@ -5,14 +5,12 @@ import ItemDetailContainer from "../componentes/ItemDetailContainer";
 
 
 function ItemRoot()  {
-
   return (
     <div>
-      <h1>APP </h1>
       <NavBar />
       <ItemDetailContainer/>
     </div>
-  )
+  );
 }
 
 export default ItemRoot;

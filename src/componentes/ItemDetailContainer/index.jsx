@@ -8,7 +8,7 @@ function ItemDetailContainer({greetings}){
     const [products, setProducts] = useState([])
     useEffect(() => {
         const productsPromise = new Promise((resolve, rejects) => 
-        setTimeout(() => resolve(Products), 4000)
+        setTimeout(() => resolve(Products), 500)
         );
 
         productsPromise
