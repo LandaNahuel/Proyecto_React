@@ -11,7 +11,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function NavBar() {
     return (
-      <Navbar className="header"  expand="sm" sticky="top">
+      <Navbar className="header p-0"  expand="sm" sticky="top" >
         <Container>
           <Navbar.Brand href="/" to={"/"}><img className="icon" src="../public/logo.webp" /></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
