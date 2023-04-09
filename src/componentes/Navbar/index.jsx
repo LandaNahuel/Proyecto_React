@@ -3,6 +3,7 @@ import "./navbar.css";
 import CardWidget from "../CardWidget";
 import { NavLink } from "react-router-dom";
 
+//Bootstrap
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -25,6 +26,7 @@ function NavBar() {
                 <NavDropdown.Item href="#action/3.5"><NavLink to={"/category/thriller"}>Thriller</NavLink></NavDropdown.Item>
                </NavDropdown>
                <Nav.Link href="#card"><NavLink to={"/card"}>Card</NavLink></Nav.Link>
+               <Nav.Link href="item"><NavLink to={"/item/das"}>Item</NavLink></Nav.Link>
             </Nav>
             
           </Navbar.Collapse>

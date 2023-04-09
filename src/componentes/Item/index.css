@@ -2,18 +2,20 @@
 
 .cardo{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     width: 75vw;
-    max-width: 650px;
+    max-width: 400px;
     padding: 20px;
     background: #f1e3b9;
     border-radius: 20px;
     border-color: black solid 1px;
 }
+
 .cardo-img{
     max-width: 380px;
-    width: 28vw;
     height: 300px;
     object-fit: cover;
     border-radius: 20px;

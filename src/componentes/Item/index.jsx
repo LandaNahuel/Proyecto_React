@@ -1,8 +1,5 @@
-import { CardGroup, CardImg } from "react-bootstrap";
 import './index.css';
-import Card from 'react-bootstrap/Card';
-
-
+import { NavLink } from "react-router-dom";
 
 
 function Item({product}) {
@@ -10,10 +7,11 @@ function Item({product}) {
       <div className="cardo">
         <img className="cardo-img" src={product.image} />
         <h1>{product.nombre}</h1>
-        <h2>{product.autor}</h2>
-        <h3>{product.categoria}</h3>
-        <h4>{product.precio}</h4>
+        {/*<h3>{product.autor}</h3>
+        <h3>{product.categoria}</h3>*/}
         <p>{product.descripcion}</p>
+        <button>Mas Info</button>
+        <Nav.Link href="item"><NavLink to={"/item/das"}>Item</NavLink></Nav.Link>
       </div>
     );
 }

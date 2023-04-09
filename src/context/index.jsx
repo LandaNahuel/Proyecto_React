@@ -5,8 +5,8 @@ export const Context = createContext();
 function CustomProvider({ children }) {
   const [itemsAddCant, setItemsCant] = useState([]);
 
-  const onAdd = () => {
-    setItemsCant((estadoAnt) => estadoAnt.concat({}));
+  const onAdd = (product, quantity) => {
+    setItemsCant((estadoAnt) => estadoAnt.concat(product));
   };
 
   const onRemove = () => {
@@ -19,7 +19,7 @@ function CustomProvider({ children }) {
     onRemove,
   };
 
-  return <Context.Provider value={value}>{children}</Context.Provider>;
+  return <Context.Provider value={{itemsAddCant, onAdd, onRemove}}>{children}</Context.Provider>;
 }
 
 export default CustomProvider;
