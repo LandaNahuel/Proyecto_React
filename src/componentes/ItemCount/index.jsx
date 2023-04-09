@@ -1,37 +1,42 @@
-import { Box, IconButton, Typography } from "";
-import AddIcon from "direccion icono";
-import RemoveIcon from "direccion icono";
 import { useState } from "react";
+import Button from "react-bootstrap/Button";
+import "./itemCount.css";
 
-function ItemCount() {
-  const [count, setCount] = useState(0);
-
+const ItemCount = ({ stock, onAdd }) => {
+  const [count, setCount] = useState(1);
   return (
-    <div className="countContainer">
-      <div className="countButtons">
+    <div className="item-count-container">
+      <div className="controls-container">
         <div>
-          <button
-            className="normalButton"
-            onClick={() => setCount((prevQuantity) => prevQuantity - 1)}
-            disabled={count <= 1}>
-              -
-          </button>
+          <Button
+            variant="dark"
+            className="controls"
+            onClick={() => setCount((prevState) => prevState - 1)}
+            disabled={count < 2}
+          >
+            -
+          </Button>
         </div>
-        <div className="counter">{count} </div>
+
+        <div className="counter">{count}</div>
         <div>
-          <button
-            className="normalButton"
-            onClick={() => setCount((prevQuantity) => prevQuantity + 1)}>
+          <Button
+            variant="dark"
+            className="controls"
+            disabled={count === stock}
+            onClick={() => setCount((prevState) => prevState + 1)}
+          >
             +
-          </button>
+          </Button>
         </div>
       </div>
-      <div className="addCart">
-        <button className="normalButton" onClick={() => add(count)}>
-          Añadir <BsCart3></BsCart3>
-        </button>
+      <div className="add-to-cart">
+        <Button variant="dark" onClick={() => onAdd(count)}>
+          Añadir al carrito
+        </Button>
       </div>
     </div>
   );
-}
+};
+
 export default ItemCount;
